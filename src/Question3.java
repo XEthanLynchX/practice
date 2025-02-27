@@ -67,7 +67,7 @@ public class Question3 {
         System.out.println("[Color Keeper]");
         for (int i = 0; i < 5; i++) {
             System.out.print("Color " + i + ": RGB or CMYK? ");
-            String type = scanner.nextLine().trim().toUpperCase();
+            String type = scanner.nextLine().toUpperCase();
 
             if (type.equals("RGB")) {
                 System.out.print("Enter Red (0-255): ");
