@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 class Cargo {
     public String description;
-
     public Cargo(String description) {
         this.description = description;
     }
@@ -47,7 +46,7 @@ public class Question1 {
                     removeTruck();
                     break;
                 case 3:
-                    System.out.println("Terminating the program.");
+                    System.out.println("Shuting down...");
                     return;
                 default:
                     System.out.println("Invalid option. Please try again.");
@@ -71,7 +70,7 @@ public class Question1 {
             Truck removedTruck = trucks.remove(index);
             System.out.println("Truck removed successfully: " + removedTruck);
         } else {
-            System.out.println("Error: Index out of bounds.");
+            System.out.println("Not a valid truck.");
         }
     }
 }
